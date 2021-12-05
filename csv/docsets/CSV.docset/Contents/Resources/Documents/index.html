@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSV  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="CSV  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          CSV 0.1.1 Docs
+        </a>
+         (56% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/benkoska/csv.swift">
+            <img class="header-icon" src="img/gh.png" alt="GitHub"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs.benkoska.com%2Fcsv%2Fdocsets%2FCSV.xml">
+            <img class="header-icon" src="img/dash.png" alt="Dash"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">CSV Reference</a>
+      <img class="carat" src="img/carat.png" alt=""/>
+      CSV  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AsyncCSVParser.html">AsyncCSVParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AsyncCSVParserIterator.html">AsyncCSVParserIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AsyncCodableCSVParser.html">AsyncCodableCSVParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AsyncCodableCSVParserIterator.html">AsyncCodableCSVParserIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AsyncDictionaryCSVParser.html">AsyncDictionaryCSVParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AsyncDictionaryCSVParserIterator.html">AsyncDictionaryCSVParserIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CSVParser.html">CSVParser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/CSVParserError.html">CSVParserError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <p align="center">
+    <a href="https://github.com/benkoska/CSV.Swift/actions">
+        <img src="https://img.shields.io/github/workflow/status/benkoska/csv.swift/Main%20Workflow/master" alt="CI Status" />
+    </a>
+    <a href="https://codecov.io/gh/benkoska/CSV.Swift">
+        <img src="https://img.shields.io/codecov/c/gh/benkoska/csv.swift?token=YKK7P9ARXM" alt="Code Coverage" />
+    </a>
+    <a href="https://github.com/benkoska/CSV.Swift/releases">
+        <img src="https://img.shields.io/github/v/tag/benkoska/csv.swift.svg" alt="Latest Release">
+    </a>
+    <a href="https://github.com/benkoska/CSV.Swift/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/benkoska/csv.swift.svg" alt="License">
+    </a>
+    <a href="https://swift.org">
+        <img src="https://img.shields.io/badge/Swift-5.5-orange.svg" alt="Swift Version">
+    </a>
+</p>
+<h1 id='csv' class='heading'>CSV</h1>
+
+<p>CSV.swift is a powerful swift library for parsing CSV files that supports reading as <code>[String]</code>, <code>[String: String]</code> and <code>Decodable</code>, without sacrificing performance.</p>
+
+<p>CSV.swift also supports the new <code>async/await</code> functionality of swift 5.5.</p>
+<h1 id='why' class='heading'>Why?</h1>
+
+<p>There are already a few CSV parsers for Swift, but I was not able to find one that had support for high-speed parsing, while still offering convenience features, such as parsing Decodables.</p>
+<h2 id='speed-comparison' class='heading'>⚡ Speed Comparison</h2>
+
+<p>[Coming Soon]</p>
+<h1 id='installation' class='heading'>Installation</h1>
+<h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
+
+<p>CSV.Swift is compatible with Swift Package Manager. Simply add it to your project&rsquo;s <code>Package.swift</code>.</p>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/benkoska/csv.swift.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"0.1.0"</span><span class="p">)</span>
+<span class="p">],</span>
+<span class="nv">targets</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">target</span><span class="p">(</span>
+        <span class="nv">name</span><span class="p">:</span> <span class="s">"Project"</span><span class="p">,</span>
+        <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+            <span class="o">.</span><span class="nf">product</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"CSV"</span><span class="p">,</span> <span class="nv">package</span><span class="p">:</span> <span class="s">"csv"</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+<span class="p">]</span>
+</code></pre>
+
+<p>After the installation you can import <code>CSV</code> in your <code>.swift</code> files.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">CSV</span>
+</code></pre>
+<h1 id='usage' class='heading'>Usage</h1>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"joe,doe,28"</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="s">"firstName"</span><span class="p">,</span> <span class="s">"lastName"</span><span class="p">,</span> <span class="s">"age"</span><span class="p">])</span>
+</code></pre>
+
+<p>Get next as array</p>
+<pre class="highlight swift"><code><span class="n">parser</span><span class="o">.</span><span class="nf">next</span><span class="p">()</span> <span class="c1">// =&gt; Optional&lt;["joe", "doe", "28"]&gt;</span>
+</code></pre>
+
+<p>Get next as dictionary</p>
+<pre class="highlight swift"><code><span class="k">try</span> <span class="n">parser</span><span class="o">.</span><span class="nf">nextAsDict</span><span class="p">()</span> <span class="c1">// =&gt; Optional&lt;["firstName": "joe", "lastName": "doe", "age": "28"]&gt;</span>
+</code></pre>
+
+<p>Decode next from <code>Decodable</code></p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Person</span><span class="p">:</span> <span class="kt">Decodable</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">firstName</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="k">let</span> <span class="nv">lastName</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="k">let</span> <span class="nv">age</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="k">try</span> <span class="n">parser</span><span class="o">.</span><span class="nf">next</span><span class="p">(</span><span class="nv">as</span><span class="p">:</span> <span class="kt">Person</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="c1">// =&gt; Optional&lt;Person(firstName: "joe", lastName: "doe", age: 28)&gt;</span>
+</code></pre>
+<h2 id='create-parser-from-code-url-code' class='heading'>Create parser from <code>URL</code></h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="s">"firstName"</span><span class="p">,</span> <span class="s">"lastName"</span><span class="p">,</span> <span class="s">"age"</span><span class="p">])</span>
+</code></pre>
+<h2 id='create-parser-from-code-string-code' class='heading'>Create parser from <code>String</code></h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"joe,doe,28</span><span class="se">\n</span><span class="s">jane,doe,21"</span>
+<span class="k">let</span> <span class="nv">string2</span> <span class="o">=</span> <span class="s">"joe|doe|28</span><span class="se">\n</span><span class="s">jane|doe|21"</span>
+<span class="k">let</span> <span class="nv">string3</span> <span class="o">=</span> <span class="s">"firstName|lastName|age</span><span class="se">\n</span><span class="s">joe|doe|28</span><span class="se">\n</span><span class="s">jane|doe|21"</span>
+
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="n">string</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="n">string2</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="n">string3</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="n">string2</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="s">"firstName"</span><span class="p">,</span> <span class="s">"lastName"</span><span class="p">,</span> <span class="s">"age"</span><span class="p">])</span>
+</code></pre>
+<h2 id='create-parser-from-code-data-code' class='heading'>Create parser from <code>Data</code></h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">parser</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CSVParser</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="s">"|"</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="s">"firstName"</span><span class="p">,</span> <span class="s">"lastName"</span><span class="p">,</span> <span class="s">"age"</span><span class="p">])</span>
+</code></pre>
+<h1 id='disclaimer' class='heading'>Disclaimer</h1>
+
+<p>Until <code>Swift.CSV</code> reaches version 1.0.0 the API is subject to breaking changes between minor version jumps.</p>
+
+<p>The being said, I will try to minimize breaking changes to the public API.</p>
+<h1 id='author' class='heading'>Author</h1>
+
+<p>Ben Koska, <a href="mailto:hello@benkoska.com">hello@benkoska.com</a></p>
+<h1 id='license' class='heading'>License</h1>
+
+<p>Swift.CSV is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://benkoska.com" target="_blank" rel="external noopener">Ben Koska</a>. All rights reserved. (Last updated: 2021-12-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

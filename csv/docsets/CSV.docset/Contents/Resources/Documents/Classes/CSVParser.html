@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSVParser Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/CSVParser" class="dashAnchor"></a>
+
+    <a title="CSVParser Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          CSV 0.1.1 Docs
+        </a>
+         (56% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/benkoska/csv.swift">
+            <img class="header-icon" src="../img/gh.png" alt="GitHub"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs.benkoska.com%2Fcsv%2Fdocsets%2FCSV.xml">
+            <img class="header-icon" src="../img/dash.png" alt="Dash"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">CSV Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      CSVParser Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AsyncCSVParser.html">AsyncCSVParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AsyncCSVParserIterator.html">AsyncCSVParserIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AsyncCodableCSVParser.html">AsyncCodableCSVParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AsyncCodableCSVParserIterator.html">AsyncCodableCSVParserIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AsyncDictionaryCSVParser.html">AsyncDictionaryCSVParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AsyncDictionaryCSVParserIterator.html">AsyncDictionaryCSVParserIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CSVParser.html">CSVParser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CSVParserError.html">CSVParserError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>CSVParser</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CSVParser</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+              <div class="slightly-smaller">
+                <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser.swift#L10-L212">Show on GitHub</a>
+              </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC11inputStream9delimiter9hasHeader6headerACSo07NSInputD0C_s5UInt8VSbSaySSGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(inputStream:delimiter:hasHeader:header:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC11inputStream9delimiter9hasHeader6headerACSo07NSInputD0C_s5UInt8VSbSaySSGSgtcfc">init(inputStream:<wbr>delimiter:<wbr>hasHeader:<wbr>header:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new CSV parser</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">inputStream</span><span class="p">:</span> <span class="kt">InputStream</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="o">=</span> <span class="mh">0x2C</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inputStream</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The input stream for CSVParser to use to read data from</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delimiter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Delimiter to be used to signify a new column</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hasHeader</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Indicates whether the CSV contains a header</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>header</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Manually set a header (if set, hasHeader will be disregarded)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser.swift#L26-L37">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC4nextSaySSGSgyF"></a>
+                    <a name="//apple_ref/swift/Method/next()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC4nextSaySSGSgyF">next()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the next item parsed as Array of Strings (if not further rows avaliable, returns nil)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">next</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser.swift#L42-L83">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC4next2asxSgxm_tKSeRzlF"></a>
+                    <a name="//apple_ref/swift/Method/next(as:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC4next2asxSgxm_tKSeRzlF">next(as:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the next item parsed as given Decodable (if not further rows avaliable, returns nil)</p>
+<div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    <code>header</code> is set, or <code>hasHeader</code> is true, and CSV contains a header
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">next</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">as</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>as</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type that should be used for decoding</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser.swift#L92-L109">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC10nextAsDictSDyS2SGSgyKF"></a>
+                    <a name="//apple_ref/swift/Method/nextAsDict()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC10nextAsDictSDyS2SGSgyKF">nextAsDict()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the next item as a dictionary (if not further rows avaliable, returns nil)</p>
+<div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    <code>header</code> is set, or <code>hasHeader</code> is true, and CSV contains a header
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nextAsDict</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser.swift#L116-L148">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC7loadAll8rowCountSaySaySSGGSgSiSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/loadAll(rowCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC7loadAll8rowCountSaySaySSGGSgSiSg_tF">loadAll(rowCount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads all rows from CSV as String Array</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadAll</span><span class="p">(</span><span class="nv">rowCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[[</span><span class="kt">String</span><span class="p">]]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rowCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional, amount of expected rows</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of String Arrays, with each top-level Array Entry representing one row, and each element of given Entry representing one column</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser.swift#L156-L168">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC13loadAllAsDict8rowCountSaySDyS2SGGSgSiSg_tKF"></a>
+                    <a name="//apple_ref/swift/Method/loadAllAsDict(rowCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC13loadAllAsDict8rowCountSaySDyS2SGGSgSiSg_tKF">loadAllAsDict(rowCount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads all rows from CSV as Dictionary ([String: String])</p>
+<div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    <code>header</code> is set, or <code>hasHeader</code> is true, and CSV contains a header
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadAllAsDict</span><span class="p">(</span><span class="nv">rowCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rowCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional, amount of expected rows</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of Dictionaries, with each Dictionary representing one row</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser.swift#L177-L189">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC7loadAll2as8rowCountSayxGSgxm_SiSgtKSeRzlF"></a>
+                    <a name="//apple_ref/swift/Method/loadAll(as:rowCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC7loadAll2as8rowCountSayxGSgxm_SiSgtKSeRzlF">loadAll(as:<wbr>rowCount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads all rows from CSV and parses them as given Decodable</p>
+<div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    <p><code>header</code> is set, or <code>hasHeader</code> is true, and CSV contains a header</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">loadAll</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">as</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">rowCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]?</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>as</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type that should be used for decoding</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rowCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional, amount of expected rows</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser.swift#L199-L211">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init%20from%20URL"></a>
+                <a name="//apple_ref/swift/Section/Init from URL" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Init%20from%20URL"></a>
+                  <h3 class="section-name"><span>Init from URL</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC3url9delimiter9hasHeader6headerAC10Foundation3URLV_SJSbSaySSGSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(url:delimiter:hasHeader:header:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC3url9delimiter9hasHeader6headerAC10Foundation3URLV_SJSbSaySSGSgtKcfc">init(url:<wbr>delimiter:<wbr>hasHeader:<wbr>header:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="kt">Character</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser+Convenience.swift#L13-L19">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC3url9delimiter9hasHeader6headerAC10Foundation3URLV_s5UInt8VSbSaySSGSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(url:delimiter:hasHeader:header:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC3url9delimiter9hasHeader6headerAC10Foundation3URLV_s5UInt8VSbSaySSGSgtKcfc">init(url:<wbr>delimiter:<wbr>hasHeader:<wbr>header:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="o">=</span> <span class="mh">0x2C</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser+Convenience.swift#L21-L27">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init%20with%20Data"></a>
+                <a name="//apple_ref/swift/Section/Init with Data" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Init%20with%20Data"></a>
+                  <h3 class="section-name"><span>Init with Data</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC4data9delimiter9hasHeader6headerAC10Foundation4DataV_SJSbSaySSGSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(data:delimiter:hasHeader:header:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC4data9delimiter9hasHeader6headerAC10Foundation4DataV_SJSbSaySSGSgtKcfc">init(data:<wbr>delimiter:<wbr>hasHeader:<wbr>header:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="kt">Character</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser+Convenience.swift#L30-L36">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC4data9delimiter9hasHeader6headerAC10Foundation4DataV_s5UInt8VSbSaySSGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(data:delimiter:hasHeader:header:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC4data9delimiter9hasHeader6headerAC10Foundation4DataV_s5UInt8VSbSaySSGSgtcfc">init(data:<wbr>delimiter:<wbr>hasHeader:<wbr>header:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="o">=</span> <span class="mh">0x2C</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser+Convenience.swift#L38-L40">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init%20with%20String"></a>
+                <a name="//apple_ref/swift/Section/Init with String" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Init%20with%20String"></a>
+                  <h3 class="section-name"><span>Init with String</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC6string9delimiter9hasHeader6headerACSS_SJSbSaySSGSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(string:delimiter:hasHeader:header:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC6string9delimiter9hasHeader6headerACSS_SJSbSaySSGSgtKcfc">init(string:<wbr>delimiter:<wbr>hasHeader:<wbr>header:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="kt">Character</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser+Convenience.swift#L43-L49">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3CSV9CSVParserC6string9delimiter9hasHeader6headerACSS_s5UInt8VSbSaySSGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(string:delimiter:hasHeader:header:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3CSV9CSVParserC6string9delimiter9hasHeader6headerACSS_s5UInt8VSbSaySSGSgtcfc">init(string:<wbr>delimiter:<wbr>hasHeader:<wbr>header:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">delimiter</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="o">=</span> <span class="mh">0x2C</span><span class="p">,</span> <span class="nv">hasHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">header</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/benkoska/csv.swift/tree/v0.1.1/Sources/CSV/CSVParser+Convenience.swift#L51-L59">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://benkoska.com" target="_blank" rel="external noopener">Ben Koska</a>. All rights reserved. (Last updated: 2021-12-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>
